@@ -94,3 +94,102 @@ average_height = (ahsoka_height + yoda_height + r2d2_height + c3p0_height) / 4
 
 print("The average height is:", average_height, "meters")
 
+
+
+
+# day 3 : functions exercises
+
+
+
+#Exercise 1
+name = input("What is your name ")
+age = input("What is your age ")
+
+print("your name is "+name+ " your age is " +age)
+
+#Exercise 2
+
+def age_of_rey():
+  ray_age = input("How old is Rey? ")
+  print(" Rey's age is " + ray_age)
+
+
+
+age_of_rey()
+
+#Exercise 2
+whoWasOnTitanice = input("who was on the titanic ")
+current_year = int(input("what year is it currently "))
+
+
+def TitanicF(whoWasOnTitanic, current_year):
+
+  brokeYear=1912
+  ago = current_year - brokeYear
+
+  print(whoWasOnTitanic + " was on the Titanic, which sunk " + str(ago)+" years ago")
+
+TitanicF(whoWasOnTitanice,current_year)
+
+
+
+#Exercise 3
+
+def my_age(age='19'):
+  print(" my age is " + age)
+
+
+my_age("39")
+my_age()
+
+
+
+# these are test with chatgpt
+
+
+
+# Test 1
+
+def say_hello1():
+  print("Hello from my function!")
+
+say_hello1()
+
+
+#Test 2 
+
+def say_hello2(name):
+  print("Hello , " + str(name) )
+
+say_hello2("Hossin")
+
+
+
+#Test 3
+
+def add(a,b):
+ sum = a + b
+ print(sum)
+
+add(10,5)
+
+
+#Test 4
+
+
+x=10
+
+def multiply_by_two(x):
+ mult = x* 2
+ print(mult)
+
+multiply_by_two(x)
+
+#Test 5 
+
+
+def square(number):
+ mult = number ** 2
+ print(mult)
+
+square(10)
