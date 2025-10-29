@@ -193,3 +193,18 @@ def square(number):
  print(mult)
 
 square(10)
+
+
+
+# day 4: Lists and Lists types
+
+# Exercise 1
+
+height = [ 1.7, 0.66 ,1.09]
+
+print(type(height))
+
+
+print(sum(height))
+
+
