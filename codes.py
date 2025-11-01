@@ -208,3 +208,102 @@ print(type(height))
 print(sum(height))
 
 
+#day 4: if else 
+
+
+
+
+#Exercise 1
+qa= input("is Rose holding a lightsaber ")
+
+if qa == "Yes":
+  print("Yes she is ")
+else:
+  print("No she is not")
+
+
+#Exercise 2
+qa1 = input(' Is the character holding a lightsaber? ')
+
+
+if qa1 == "Yes":
+  print("the character is holding a lightsaber")
+  qa2 = input('Is the lightsaber green ')
+  if qa2 == "Yes":
+    print('The character is Yoda. ')
+  else:
+    print('the character is not Yoda')
+
+else:
+  print("the character is not holding a lightsaber")
+
+
+#Exercise 3
+
+qa3 = input('Select Team from 1 to 3 ')
+
+if qa3 == "1":
+  print('You picked team 1, which has 1 character, which is Yoda ')
+elif qa3 =="2":
+  print('You picked team 2, which has 2 characters, Jack & Rose ')
+elif qa3 == "3":
+  print('"You picked team 3, which has 2 characters, Vader & Leah ')
+elif qa3 != '1' or qa3 != '2' or qa3 !='3':
+  print('please select 1 or 2 or 3 ')
+
+if qa3 == '1' or qa3 =='3':
+  print('The number of people on the team you selected is odd.')
+else:
+  print("The number of people on the team you selected is even.")
+
+
+
+
+# practice with chatgpt
+
+#test 1
+qa11 = int(input('select number from 1 to 30 '))
+
+if qa11 > 10:
+  print("big Number")
+else:
+  print("small Number")
+
+#test 2
+qa12 = int(input('what is your age '))
+
+if qa12 < 13:
+  print("Child")
+elif qa12 > 13 and qa12 < 19:
+  print("Teenager")
+else:
+  print('Adult')
+
+#test 3
+qa13 = int(input('select number from1 to 20 '))
+
+if qa13 > 5 and qa13 < 15:
+  print("Number is in range")
+else:
+  print('Out of range')
+
+
+
+#test 4
+qa14 = input('selec a color ')
+
+if qa14 == "red" or qa14 == "blue":
+  print("Primary color")
+else:
+  print('no Primary ')
+
+
+
+#test 5
+qa15 = input('enter the pass ')
+
+if qa15 != '1234':
+  print("Wrong password!")
+else:
+  print('Access granted!')
+
