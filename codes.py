@@ -307,3 +307,95 @@ if qa15 != '1234':
 else:
   print('Access granted!')
 
+
+
+# day 5: match and formating exercises
+
+#Exercise 1
+selectTeam= int(input('selct 1 or 2 or 3 '))
+
+
+match selectTeam:
+  case 1:
+    print('You selected Team 1')
+  case 2:
+    print('You selected Team 2')
+  case 3:
+    print('You selected Team 3')
+  case _:
+    print('and')
+
+#Exercise 2
+
+selectTakit1st= input(' How many 1st tickets do you want to purchase? ')
+selectTakit2nd= input(' How many  2nd  tickets do you want to purchase? ')
+selectTakit3rd= input(' How many 3rd  tickets do you want to purchase? ')
+
+totals= int(selectTakit1st)*870 + int(selectTakit2nd)* 100.42 +int(selectTakit3rd)*7
+
+print(f"the totals are {totals:.2f}") 
+
+
+
+
+# these are test with chatgpt
+
+#Test 1
+
+name = "Hossin"
+age = 20
+
+
+print(f"My name is {name} I'M {age} Years old")
+
+#Test 2
+
+price = 45.6789
+ 
+print(f'{price:.2f} SR')
+
+
+#Test 3 
+
+PickNum = int(input('select number from 1 to 3'))
+
+match PickNum:
+  case 1:
+    print(f"you select class {PickNum}")
+  case 2:
+    print(f"you select class {PickNum}")
+  case 3:
+    print(f"you select class {PickNum}")
+  case _:
+    print('Invalid choice')
+
+
+#Test 4
+
+age = int(input('what is your age '))
+
+match age:
+  case _ if age < 13:
+    print("Child")
+  case _ if age < 20:
+    print('Teenager')
+  case _:
+    print('adult')
+
+
+#Test 5
+ticket = int(input('Select a ticket class (1, 2, or 3).'))
+
+
+
+match ticket:
+  case 1:
+    price = 870
+    print(f"You selected class {ticket}, the price is {price:.2f} pounds.")
+  case 2:
+    price = 100.42
+    print(f"You selected class {ticket}, the price is {price:.2f} pounds.")
+  case 3:
+    price = 7
+    print(f"You selected class {ticket}, the price is {price:.2f} pounds.")
+
