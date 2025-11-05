@@ -387,7 +387,6 @@ match age:
 ticket = int(input('Select a ticket class (1, 2, or 3).'))
 
 
-
 match ticket:
   case 1:
     price = 870
@@ -399,3 +398,74 @@ match ticket:
     price = 7
     print(f"You selected class {ticket}, the price is {price:.2f} pounds.")
 
+
+
+# day 6 : lopps exercises
+
+#Exercise 1
+listss = ["Leia I am your father.","Luka I am your father."]
+
+for x in listss:
+  print(x)
+
+
+
+
+
+# tests with chatgpt
+
+
+# Test 1
+ 
+for a in range(1,6):
+  print(a)
+
+
+# Test 2
+
+for a in range(2,11,2):
+  print(a)
+
+# Test 3
+
+
+names = ["Hossin", "Yoda", "Ahsoka"]
+
+for n in names:
+  print(f"hello , {n}")
+
+
+# Test 4
+
+for d in range(1,10):
+  if d == 5:
+    continue;
+  if d == 8:
+    break
+  print(d)
+
+
+for d in range(1,10):
+
+  match d:
+    case 5:
+      continue
+    case 8:
+      break
+    case _:
+      print(d)
+
+# Test 5 
+
+nums = [1, 2, 4, 5]
+
+for dd in nums:
+  if dd == 3:
+    print("Found 3!")
+    break
+else:
+  print("3 not found!")
+
+
+
+# print(len(nums))
