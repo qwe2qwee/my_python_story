@@ -466,6 +466,158 @@ for dd in nums:
 else:
   print("3 not found!")
 
+# day 7: dictionaries exercises and tuples
 
 
-# print(len(nums))
+#Exercise 1
+
+# Original tuple
+characters = ("Han Solo", "Yoda", "R2d2", "C3P0")
+
+forgotten_character = "Darth Vader"
+
+characters = list(characters)
+
+characters.append(forgotten_character)
+
+characters = tuple(characters)
+
+print(type(characters))
+
+
+
+#Exercise 2
+
+allegiances = {"Luke Skywalker":"Rebel Alliance","Darth Vader":" Galactic Empire", " Obi-Wan Kenobi":" Jedi Order" }
+
+print(allegiances['Darth Vader'])
+
+allegiances['Darth Vader'] = 'Sith Order'
+
+allegiances['Leia'] = 'Rebel Alliance'
+
+print(allegiances)
+
+
+# tests with chatgpt
+
+# Test 1 
+car = {
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2020,
+}
+
+print(car.get('brand'))
+
+# Test 2
+
+car['color'] = "Blue"
+car['year'] = 2025
+
+print(car)
+
+
+# Test 3
+
+for key, value in car.items():
+  print(f" { key}: {value}")
+
+# Test 4 
+
+print(car.values())
+print(car.keys())
+print(car.items())
+
+
+# Test 5 
+
+car.pop('color')
+print(car)
+
+car.clear()
+
+print(car)
+
+
+
+# Test with chatgpt level up
+
+
+# Test 1
+
+car = {
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2020,
+    "price": 24000
+}
+
+askUser = input("do you want to udate the car price ?: yes/no ")
+if askUser.lower() == "yes":
+  new_price = input("Enter the new price: ")
+  car['price'] = int(new_price)
+
+for key , value in car.items():
+  print(f"{key}:{value}")
+
+# Test 2
+
+grades = {"Ali": 90, "Sara": 80, "Yoda": 100}
+
+nn = 0
+
+for d in grades.values():
+  nn += d
+
+total = sum(grades.values())
+average = total / len(grades)
+print(f"The average is {average:.2f}")
+
+
+# Test 3
+
+users = {"hossin": "1234", "yoda": "9999", "luke": "0000"}
+askUser1 = input('search the user ')
+
+if askUser1 in users:
+  print('User found!')
+else:
+  print('User not found!')
+
+
+# Test 4
+
+allSen = {}
+
+sentes = input('enter stences')
+
+words = sentes.lower().split()
+
+
+for n in words:
+  if n in allSen:
+    allSen[n] += 1
+  else:
+    allSen[n] = 1
+  
+print(allSen)
+
+
+
+
+# Test 5
+
+car1 = {"brand": "Toyota", "year": 2020}
+car2 = {"color": "Red", "price": 85000}
+
+car_full = {}
+
+for key, value in car1.items():
+    car_full.update({key: value})
+
+for key, value in car2.items():   
+    car_full.update({key: value})
+
+print(car_full)
+
