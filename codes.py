@@ -621,3 +621,67 @@ for key, value in car2.items():
 
 print(car_full)
 
+
+
+# day 8: set exercises
+
+#Exercise 1
+
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+set3 = set1.union(set2)
+
+print(set3)
+
+
+
+#Exercise 2
+
+storm_troopers_group1= ["trooper_1","trooper_2","trooper_3","trooper_4"]
+storm_troopers_group2= ["trooper_5","trooper_2","trooper_34","trooper_46"]
+
+
+storm_set1 = set(storm_troopers_group1)
+
+InAllClasses = storm_set1.intersection(storm_troopers_group2)
+
+print(InAllClasses)
+
+
+# test with chatgpt
+
+# test 1
+fruits = {"apple", "banana", "orange"}
+more_fruits = {"banana", "kiwi", "mango"}
+
+
+unique = fruits.union(more_fruits)
+
+print(unique)
+
+# test 2 
+
+comon = fruits.intersection(more_fruits)
+print(comon)
+
+# test 3 
+
+defrent = fruits.difference(more_fruits)
+print(defrent)
+
+# test 4 
+
+fruits.add("grape")
+
+fruits.remove('orange')
+
+print(fruits)
+
+# test 5 
+
+tropical = {"mango", "kiwi", "pineapple"}
+
+Inboth = tropical.intersection(more_fruits)
+
+print(Inboth)
